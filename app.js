@@ -43,7 +43,7 @@ app.use((error, req, res, next) => {
 
 mongoose
   .connect(
-    `mongodb+srv://admin_shiv:cEspTCPn00IEvYca@moviesdb.1dr3k.mongodb.net/CapitalMovies?retryWrites=true&w=majority`
+    `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@moviesdb.1dr3k.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`
   )
   .then(() => {
     app.listen(process.env.PORT || 5000);
