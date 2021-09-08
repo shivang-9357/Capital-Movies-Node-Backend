@@ -4,7 +4,6 @@ const jwt = require('jsonwebtoken');
 
 const HttpError = require('../models/http-error');
 const User = require('../models/user');
-const user = require('../models/user');
 
 const getUsers = async (req, res, next) => {
   let users;
@@ -63,7 +62,6 @@ const signup = async (req, res, next) => {
   const createdUser = new User({
     name,
     email,
-    // image: req.file.path,
     password: hashedPassword,
     places: []
   });
