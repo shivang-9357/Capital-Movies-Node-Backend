@@ -1,8 +1,8 @@
 {
     "env": {
-        "DB_USER": "admin_shiv",
-        "DB_PASSWORD": "cEspTCPn00IEvYca",
-        "DB_NAME": "CapitalMovies",
-        "JWT_KEY": "cEspTCPn00IEvYca"
+        "DB_USER": "REQUIRED",
+        "DB_PASSWORD": "REQUIRED",
+        "DB_NAME": "REQUIRED",
+        "JWT_KEY": "REQUIRED"
     }
 }
